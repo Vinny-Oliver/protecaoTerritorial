@@ -1,0 +1,380 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilizando a barra de rolagem globalmente */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Handle da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #007bff; /* Cor de fundo do handle da barra de rolagem */
+    border-radius: 6px; /* Arredondamento das bordas do handle */
+    border: 3px solid #ffffff; /* Borda em volta do handle */
+}
+
+/* Handle da barra de rolagem ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Cor de fundo do handle ao passar o mouse */
+}
+
+/* Track da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Cor de fundo da trilha da barra de rolagem */
+    border-radius: 6px; /* Arredondamento das bordas da trilha */
+    box-shadow: inset 0 0 5px grey; /* Sombra interna na trilha */
+}
+
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que a largura e altura de elementos incluam bordas e preenchimentos */
+}
+
+/* Garante que nenhum elemento se estenda além da largura do viewport */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Força a largura e altura de imagens e vídeos para que não ultrapassem a largura do viewport */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* Oculta a rolagem horizontal */
+    overflow-y: auto; /* Permite a rolagem vertical */
+    box-sizing: border-box; /* Garante que a largura e altura de elementos incluam bordas e preenchimentos */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    background-color: #f8f9fa; /* Define a cor de fundo */
+    color: #333; /* Define a cor do texto */
+ 
+}
+
+body, .container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.logo {
+    height: 60px; /* Defina a altura da imagem do logotipo */
+}
+
+/* Estilos para o navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Define o fundo do navbar como preto */
+    transition: background-color 0.3s ease-in-out; /* Transição suave para a cor de fundo */
+    min-height: 28px; /* Define uma altura mínima para a barra de navegação */
+    padding-top: 3px; /* Adiciona um espaçamento superior interno */
+    padding-bottom: 2px; /* Adiciona um espaçamento inferior interno */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
+    color: #ffffff; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre caracteres */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombra de texto */
+    border-bottom: 2px solid #ffa500; /* Adiciona uma borda inferior laranja */
+    /* margin-top: 20px; aqui adiciona espaçamento superior */
+    /* margin-right: 20px; /* Adicione algum espaçamento à direita da imagem do logotipo */
+    /* margin-left: 20px; /* Adicione algum espaçamento à esquerda da imagem do logotipo */
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.9) !important; /* Cor de fundo ao passar o mouse */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Cor do ícone do botão de alternância */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* Cor do texto dos links */
+    /*font-weight: 5000; /* Texto com peso da fonte */
+    transition: color 0.3s; /* Efeito de transição de cor do texto */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffa500 !important; /* Cor do texto ao passar o mouse */
+}
+
+/* Formulário de busca Futurista */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo do campo de pesquisa com transparência */
+    border-color: #4caf50; /* Cor da borda do campo de pesquisa */
+    color: #ff0000 !important; /* Cor do texto do campo de pesquisa */
+    font-family: 'Van', Arial, Helvetica, sans-serif;
+}
+
+/* Estilize o texto do placeholder */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Cor do texto do placeholder (substitua com a cor desejada) */
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgb(98, 0, 255); /* Sombra de texto */
+}
+
+.btn-outline-success {
+    color: white; /* Define a cor do texto do botão de pesquisa como branco */
+    border-color: #4caf50; /* Define a cor da borda do botão de pesquisa como verde */
+    /*font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.5s; /* Efeito de transição de cor de fundo */
+    font-family: 'Van', Arial, Helvetica, sans-serif;
+}
+
+.btn-outline-success:hover {
+    background-color: #4caf50; /* Define a cor de fundo do botão de pesquisa ao passar o mouse como verde */
+    color: white; /* Define a cor do texto do botão de pesquisa ao passar o mouse como branco */
+}
+
+/* Garante que o carrossel preencha toda a largura disponível */
+.carousel-inner img {
+    width: 100%;
+    height: auto; /* Ajusta a altura automaticamente mantendo a proporção da imagem */
+}
+
+/* Caso queira que o carrossel ocupe toda a altura da viewport, pode adicionar */
+.carousel-inner img {
+    min-height: 100vh; /* Ajusta para que a altura mínima seja a da viewport */
+}
+
+.navbar-brand img {
+    max-height: 40px; /* Defina a altura máxima desejada */
+    width: auto; /* Permita que a largura seja ajustada automaticamente */
+    margin-right: 10px; /* Ajuste o espaçamento entre o logo e o texto, se necessário */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com 70% de opacidade */
+  color: #fff; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.carousel-caption h2 {
+  font-size: 2rem; /* Tamanho do título */
+}
+
+.carousel-caption p {
+  font-size: 1.2rem; /* Tamanho do texto */
+}
+
+.carousel-caption a.main-btn {
+  display: inline-block;
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  text-decoration: none; /* Remover sublinhado */
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+.carousel-caption a.main-btn:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo semi-transparente para o texto do carousel */
+    border-radius: 10px;
+    /* Borda arredondada para a caixa de texto */
+    padding: 20px;
+    /* Preenchimento interno */
+    text-align: center;
+    /* Alinhamento central do texto */
+    position: absolute;
+    /* Posição absoluta para ajustar a posição vertical */
+    bottom: auto;
+    /* Desativa o posicionamento padrão no bottom */
+    left: 15%;
+    right: 15%;
+    top: 50%;
+    /* Posiciona o topo do caption a 50% do topo do container, ou seja, no meio */
+    transform: translateY(1%);
+    /* Desloca o caption para cima pela metade de sua altura, centralizando-o verticalmente */
+}
+
+.carousel-caption h2 {
+    color: #00a6e3;
+    /* Cor do texto do título do carousel */
+    font-size: 36px;
+    /* Tamanho grande da fonte */
+    font-weight: bold;
+    /* Texto em negrito */
+}
+
+.carousel-caption p {
+    color: #fff;
+    /* Cor do texto da descrição do carousel */
+}
+
+/* Personalização dos indicadores do carrossel */
+.carousel-indicators button {
+    background-color: #007bff;
+    /* Cor de fundo */
+    width: 12px;
+    /* Largura */
+    height: 12px;
+    /* Altura */
+    border-radius: 50%;
+    /* Torna o botão circular */
+    border: none;
+    /* Remove a borda */
+    margin-right: 5px;
+    /* Espaçamento à direita */
+    margin-left: 5px;
+    /* Espaçamento à esquerda */
+    opacity: 0.7;
+    /* Transparência para diferenciar do ativo */
+}
+
+/* imagens */
+.imagem {
+    border-radius: 5px;
+    width: 100%;
+}
+
+#divisao-meio {
+    background-color: #333; /* Cor de fundo mais escura */
+    color: #fff; /* Cor do texto */
+    padding: 50px 0; /* Espaçamento interno superior e inferior */
+  }
+  
+  #divisao-meio h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 28px; /* Tamanho do título */
+  }
+  
+  #divisao-meio p {
+    font-size: 18px; /* Tamanho do texto */
+  }
+
+.headline {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-size: 2.8rem; /* Aumentei o tamanho da fonte para dar mais destaque */
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px; /* Aumentei o espaçamento entre as letras para um efeito mais dramático */
+    color: #00ff40; /* Cor vibrante para o texto */
+    text-shadow: 0px 0px 12px rgba(0, 255, 64, 0.7); /* Sombra com glow para um efeito futurista */
+    background-image: linear-gradient(45deg, #6d5dfc, #b224ef, #6d5dfc); /* Gradiente de fundo animado */
+    background-size: 200% 200%;
+    animation: rainbowAnimation 4s ease infinite; /* Animação do gradiente */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: inline-block;
+    padding: 10px 20px; /* Padding ajustado para acomodar o background */
+}
+
+
+/* planos de fundo */
+.fundo {
+    background-color: rgba(102, 97, 92, 0.603);
+}
+
+/* links */
+
+p a {
+    text-decoration: none;
+}
+
+.efeito-sombra {
+    box-shadow: 5px -5px 100px 0px rgba(0, 0, 0, 0.3);
+    /* filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3)); */
+}
+
+/* Estilo futurista para o footer */
+footer {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #2e2e2e, #1a1a1a); /* Gradiente de cores */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+    font-size: 14px; /* Tamanho da fonte */
+    line-height: 1.5; /* Altura da linha */
+    
+}
+
+/* Estilo dos links do footer */
+footer a {
+    color: #d1b4b4; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado */
+    transition: color 0.3s; /* Transição suave de cor */
+}
+
+/* Estilo dos links quando hover */
+footer a:hover {
+    color: #ffa500; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo dos links específicos */
+footer a#topo {
+    font-weight: bold; /* Texto em negrito */
+}
+
+footer a#fale-conosco {
+    font-style: italic; /* Texto em itálico */
+}
+
+footer a#protecao-povos {
+    font-weight: bold;
+    font-style: italic;
+}
+
+footer a#movimentos-indigenas {
+    font-size: 0.9em; /* Tamanho de fonte menor */
+    font-weight: bold;
+    font-style: italic;
+}
+
+#foto-futurista {
+    background-image: url('https://img.freepik.com/fotos-gratis/folha-de-outono-multicolorida-vibrante-com-gotas-de-orvalho-transparentes-geradas-por-ia_188544-9667.jpg?w=1380&t=st=1710395590~exp=1710396190~hmac=56016d7ba0be19bb37bc6ec801afbe0f257e3913f35b1bcd346865e908246a0fhttps://img.freepik.com/fotos-gratis/folha-de-outono-multicolorida-vibrante-com-gotas-de-orvalho-transparentes-geradas-por-ia_188544-9667.jpg?w=1380&t=st=1710395590~exp=1710396190~hmac=56016d7ba0be19bb37bc6ec801afbe0f257e3913f35b1bcd346865e908246a0fhttps://img.freepik.com/fotos-gratis/folha-de-outono-multicolorida-vibrante-com-gotas-de-orvalho-transparentes-geradas-por-ia_188544-9667.jpg?w=1380&t=st=1710395590~exp=1710396190~hmac=56016d7ba0be19bb37bc6ec801afbe0f257e3913f35b1bcd346865e908246a0f');
+    background-size: cover; /* Para cobrir todo o fundo */
+    background-position: center; /* Para centralizar a imagem */
+    background-attachment: fixed; /* Para fixar a imagem de fundo */
+    padding: 50px 0; /* Adicione algum espaçamento interno conforme necessário */
+    color: #ffffff; /* Cor do título */
+}
+
+.background-image {
+    background-image: url('https://i.pinimg.com/originals/87/2c/ab/872cab564cb7eaf7cb9535da24eb2c6d.gif'); /* Substitua 'caminho/da/sua/imagem.jpg' pelo caminho real da sua imagem */
+    background-size: cover; /* Garante que a imagem cubra todo o espaço disponível */
+    background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+}
+
+.video-container {
+    width: 100%; /* Largura desejada */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+
+
+
+
+
+
+
+

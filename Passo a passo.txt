@@ -1,0 +1,27 @@
+Segue o passo a passo:
+
+1. Instale o Xampp em seu computador.
+2. Descompacte a estrutura do projeto na seguinte pasta: `C:\xampp\htdocs`.
+3. Abra a pasta do projeto no Visual Studio Code.
+4. Inicie o Xampp e certifique-se de que o Apache e o MySQL estão conectados.
+5. Crie os bancos de dados conforme a estrutura abaixo:
+   - Banco de Dados 01: `formulario-mapa`
+     - Tabela: `usuarios`
+     - Número de colunas: 5
+     - Nomes das colunas: `id`, `nome`, `email`, `assunto` e `mensagem`
+   - Banco de Dados 02: `formulario-contato`
+     - Tabela: `usuarios`
+     - Número de colunas: 5
+     - Nomes das colunas: `id`, `nome`, `email`, `assunto` e `mensagem`
+   - Banco de Dados 03: `formulario-cadastro`
+     - Tabela: `usuarios`
+     - Número de colunas: 10
+     - Nomes das colunas: `id`, `nome`, `email`, `senha`, `telefone`, `sexo`, `data_nasc`, `cidade`, `estado` e `endereco`
+
+Após seguir esses passos, você poderá visualizar o site da seguinte forma:
+- Digite na URL do seu navegador: `http://localhost/ProtecaoTerritorial/index.html` para acessar a página inicial.
+- Para as demais páginas, substitua a extensão `.html` por `.php`. Por exemplo: `http://localhost/ProtecaoTerritorial/mapa.php` para acessar a página do mapa.
+
+Atenciosamente,
+
+Marcus Oliveira

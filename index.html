@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="img/png" href="img/mapa.ico" class="logotipo">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column wrapper">
+
+        <!--Abertura da navegação com bootstrap-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <img src="img/Proteção.png" class="img-fluid logo" alt="Live Aldeia Map"
+                    style="width: 170px; height: auto;"> <!-- Adicionei o estilo inline -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" style="font-size: 20px;">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="mapa.php" style="font-size: 20px;">Mapa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contato.php" style="font-size: 20px;">Fale Conosco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cadastro.php" class="nav-link text-white" style="font-size: 20px;">Cadastre-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.php" class="nav-link text-white" style="font-size: 20px;">Entrar</a>
+                        </li>
+                    </ul>
+
+                    <!--Mapa de denúncias-->
+                    <form class="d-flex" role="search"
+                        action="https://www.google.com/maps/@-7.8475804,-53.5728367,2268m/data=!3m1!1e3?entry=ttu"
+                        method="GET">
+                        <input class="form-control me-2" type="search" name="q" placeholder="Mapa" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="img/20-1920x1080px.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-md-block">
+                        <h2>DEMARCAÇÃO</h2>
+                        <p>É uma frase comumente usada em movimentos de defesa dos direitos dos povos indígenas no
+                            Brasil. Ela expressa a urgência e a necessidade de acelerar o processo de demarcação das
+                            terras
+                            indígenas, que são reconhecidas como pertencentes aos povos indígenas de acordo com a
+                            Constituição
+                            brasileira de 1988. No entanto, muitas terras indígenas ainda aguardam o processo de
+                            demarcação, enfrentando
+                            ameaças de invasão, exploração ilegal e destruição ambiental. Portanto, "Demarcação já" é um
+                            chamado para que o governo cumpra seu dever constitucional de
+                            demarcar as terras indígenas, garantindo assim a proteção dos direitos e da dignidade.</p>
+                        <!-- <a href="link-para-mais-informações.html" class="main-btn">Botão de ação</a> -->
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/acampamento-terra-livre-ATL2022-foto-edgar-kanayko-apib-wwfbrasil2.png"
+                        class="d-block w-100" alt="">
+                    <div class="carousel-caption d-md-block">
+                        <h2>O futuro é indígena</h2>
+                        <p>Reflete a ideia de que os conhecimentos, valores e práticas dos povos indígenas são
+                            essenciais para a construção de um futuro sustentável e harmonioso. Ela sugere que a
+                            preservação das culturas indígenas, seus modos de vida tradicionais e sua relação com o meio
+                            ambiente são fundamentais para enfrentar os desafios globais, como as mudanças climáticas, a
+                            perda de biodiversidade e a busca por uma sociedade mais justa.</p>
+                        <!-- <a href="link-para-mais-informações.html" class="main-btn">Botão de ação</a> -->
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/capa-PL.png" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-md-block">
+                        <h2>Nossa terra, Nossa Luta</h2>
+                        <p>É uma frase frequentemente associada aos movimentos de resistência e reivindicação de
+                            direitos territoriais de povos indígenas e comunidades tradicionais. Essa frase reflete a
+                            luta desses grupos pela preservação de suas terras ancestrais, pela proteção do meio
+                            ambiente e pela defesa de seus modos de vida tradicionais. É uma expressão que ressalta a
+                            conexão intrínseca entre a terra e a identidade cultural desses povos, destacando a
+                            importância da luta contínua pela justiça e pelo reconhecimento de seus direitos
+                            territoriais.
+                        </p>
+                        <!-- <a href="link-para-mais-informações.html" class="main-btn">Botão de ação</a> -->
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+    <main class="flex-fill">
+        <section id="divisao-meio">
+            <div class="container text-center py-5">
+                <h2>Últimas Notícias das Comunidades Indígenas</h2>
+                <p>Explore as ricas culturas e as lutas atuais das nações originárias.</p>
+            </div>
+        </section>
+
+        <section class="container background-image"><!--inicio adicionados-->
+
+            <div class="row">
+                <a href="#" class="col-lg-3 col-sm-6 col-md-4">
+                    <figure>
+                        <img src="img/ATL.jpg" alt="" class="img-fluid img-thumbnail">
+                        <figcaption class="text-center">
+                            ACAMPAMENTO TERRA LIVRE
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="col-lg-3 col-sm-6 col-md-4">
+                    <figure>
+                        <img src="img/MULHERES.jpg" alt="" class="img-fluid img-thumbnail">
+                        <figcaption class="text-center">
+                            VOZES DAS MULHERES INDÍGENAS
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="col-lg-3 col-sm-6 col-md-4">
+                    <figure>
+                        <img src="img/MARCO TEMPORAL.jpeg" alt="" class="img-fluid img-thumbnail">
+                        <figcaption class="text-center">
+                            MARCO TEMPORAL
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="col-lg-3 col-sm-6 col-md-4">
+                    <figure>
+                        <img src="img/photo_2021-06-29_16-33-34-scaled (1).jpg" alt="" class="img-fluid img-thumbnail">
+                        <figcaption class="text-center">
+                            JUVENTUDE EM AÇÃO
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </section><!--Fim adicionados-->
+
+        <section id="foto-futurista"><!--Nosso Vídeo-->
+            <div class="container"> <!--inicio container vídeo-->
+                <h3 class="text-center mb-2">Nossos Vídeos</h3>
+                <br><br>
+                <div class="row d-flex"> <!--início linha-->
+                    <figure class="col-lg-3 img-fluid">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qnB_uJftOD0" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </figure>
+                    <div class="col-lg-3">
+                        <article class="ml-3 text-justify ">
+                            O papel da juventude indígena na luta indígena.
+                        </article>
+                    </div>
+                    <figure class="col-lg-3 img-fluid">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CgIQ8niv0ag" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </figure>
+
+                    <div class="col-lg-3">
+                        <article class="ml-3 text-justify">
+                            A origem dos índios: como se espalharam no Brasil, Américas e no planeta
+                        </article>
+                    </div>
+                </div><!--fim linha-->
+            </div><!--fim container vídeo-->
+        </section><!-- Fim nosso Vídeo-->
+    </main>
+
+    <footer class="border-top text-muted bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-4 text-center">
+                    &copy; Copyright 2023 - Todos direitos reservados.<br>
+
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="#" class="text-decoration-none">
+                        Voltar ao topo
+                    </a><br>
+                    <a href="contato.html" class="text-decoration-none">
+                        Fale conosco
+                    </a><br>
+                    <a href="mapa.html" class="text-decoration-none">
+                        Proteção dos Povos
+                    </a><br>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <ul class="navbar icones">
+                        <li><a href="https://github.com/" class="text-hide"> GitHub</a></li>
+                        <li><a href="https://br.linkedin.com/" class="text-hide"> Linkedin</a></li>
+                        <li><a href="https://www.facebook.com/" class="text-hide"> Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="javascript/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+/* Estilos gerais */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Estilos gerais */
+body {
+    background-image: url('../img/aerial-picture-river-surrounded-by-islands-covered-greenery-sunlight.jpg');
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: #343a40;
+    /* Cor de fundo da barra de navegação */
+}
+
+.navbar .navbar-brand img {
+    max-height: 50px;
+    /* Ajuste a altura do logotipo conforme necessário */
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    /* Cor do texto dos links */
+}
+
+.navbar-toggler {
+    border-color: white;
+    /* Cor do ícone do botão de alternância */
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    /* Cor do ícone do botão de alternância */
+}
+
+/* Estilos para o conteúdo principal */
+.container {
+    padding: 20px;
+    margin: 0;
+    
+}
+
+.text-center {
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Borda preta com 10% de transparência */
+    padding: 10px; /* Espaçamento interno para melhor visualização */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de transparência */
+    
+}
+
+/* Estilos para os cards */
+.card {
+    margin-top: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #f8f9fa;
+    /* Cor de fundo do rodapé */
+    padding: 20px 0;
+}
+
+.footer-link {
+    color: #6c757d;
+    /* Cor dos links do rodapé */
+}
+
+.footer-link:hover {
+    color: #007bff;
+    /* Cor dos links do rodapé ao passar o mouse */
+}
+
+/* Estilos para o formulário de pesquisa */
+#pesquisar {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ced4da;
+    /* Cor da borda do campo de pesquisa */
+    border-radius: 5px;
+}
+
+/* Estilos para o mapa e as instruções */
+.pai {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filho1,
+.filho2 {
+    width: 48%;
+    /* Largura dos elementos pai */
+
+}
+
+
+/* Estilos para os textos do mapa e das instruções */
+h2,
+h3,
+h1 {
+    margin-top: 20px;
+}
+
+
+h1,
+h2,
+h3,
+p {
+    font-family: Arial, sans-serif;
+    color: goldenrod;
+    /* Cor do texto */
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+p:hover {
+    color: #ff6347;
+    /* Cor do texto ao passar o mouse */
+    transition: color 0.3s;
+    /* Efeito de transição suave */
+    cursor: pointer;
+    /* Altera o cursor para indicar interatividade */
+}
+
+
+h1 {
+    font-size: 28px;
+    /* Tamanho da fonte para h1 */
+    font-weight: bold;
+    /* Negrito para h1 */
+    margin-bottom: 15px;
+    /* Margem inferior para separar do conteúdo abaixo */
+}
+
+h2 {
+    font-size: 24px;
+    /* Tamanho da fonte para h2 */
+    font-weight: bold;
+    /* Negrito para h2 */
+    margin-bottom: 10px;
+    /* Margem inferior para separar do conteúdo abaixo */
+}
+
+h3 {
+    font-size: 20px;
+    /* Tamanho da fonte para h3 */
+    font-weight: bold;
+    /* Negrito para h3 */
+    margin-bottom: 5px;
+    /* Margem inferior para separar do conteúdo abaixo */
+}
+
+p {
+    font-size: 16px;
+    /* Tamanho da fonte para p */
+    margin-bottom: 10px;
+    /* Margem inferior para separar do conteúdo abaixo */
+}
+
+#texto-final {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: left;
+    border-radius: 10px;
+}
+
+/* Estilos para o formulário de contato */
+.map {
+    float: right;
+    margin-right: 200px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px; /* Defina o tamanho máximo conforme desejado */
+}
+
+.map iframe {
+    width: 100%;
+    height: 500px; /* Defina a altura conforme desejado */
+    border: 0;
+}
+
+#contact-form {
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo de vidro transparente para o formulário */
+    padding: 20px; /* Espaçamento interno do formulário */
+    border-radius: 10px; /* Borda arredondada do formulário */
+}
+
+#contact-form .form-control {
+    margin-bottom: 10px; /* Espaçamento entre os campos do formulário */
+}
+
+#contact-form #submit {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo do botão enviar */
+    color: white; /* Cor do texto do botão enviar */
+    border: none; /* Remove a borda do botão enviar */
+    padding: 10px 20px; /* Espaçamento interno do botão enviar */
+    cursor: pointer; /* Cursor ao passar por cima do botão enviar */
+    border-radius: 5px; /* Borda arredondada do botão enviar */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse sobre o botão enviar */
+}
+
+#contact-form #submit:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo mais escura ao passar o mouse sobre o botão enviar */
+}
+
+#texto-div-form {
+    color: blue; /* Altere a cor para a cor desejada */
+}
+
+
+
