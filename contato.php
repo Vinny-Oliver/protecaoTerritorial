@@ -105,19 +105,14 @@ if (isset($_POST['submit'])) {
                 </h2>
                 <p class="text-center">Ao todo somos uma equipe com 4 desenvolvedores, conheça cada um de nós</p>
             </div>
-            <section class="container"><!--inicio equipe-->
-                <h2 class="text-center mt-3 mb-3">
-                    Equipe Desenvolvedores de Front End
-                </h2>
-                <br>
-                <div class="container-fluid collum text-center rounded"><!--início linha-->
-                    <!-- início media-->
-                    <img src="img/WhatsApp Image 2023-11-09 at 12.44.01.jpeg" class=" img-fluid img-thumbnail mx-auto d-block img-contato">
-                    <h3 class="h5">
-                        JAQUELINE GOMES DE MOURA
-                    </h3>
-                    <article class="mb-3">
-                        Meu nome no idioma é kunã, sou ativista e comunicadora Indígena. Atualmente sou
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="img/WhatsApp Image 2023-11-09 at 12.44.01.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jaqueline Gomes de Moura</h5>
+                            <p class="card-text">Meu nome no idioma é kunã, sou ativista e comunicadora Indígena. Atualmente sou
                         representando da juventude Kambiwá, faço parte dos grupos:
                         Samba de coco Flor de caroá, associações de Jovens e Mulheres da Aldeia Nazário,
                         grupo
@@ -126,38 +121,31 @@ if (isset($_POST['submit'])) {
                         localidades.
                         Sou universitária, estudante de ENG. Agronômica na Universidade Federal do Agreste
                         de
-                        Pernambuco (UFAPE)
-
-                    </article>
-                </div><!--fim media-->
-
-                <div class="container-fluid collum text-center rounded"><!--início linha-->
-                    <!-- início media-->
-                    <img src="img/WhatsApp Image 2023-11-09 at 12.42.17.jpeg" class=" img-fluid img-thumbnail mx-auto d-block img-contato">
-                    <h3 class="h5">
-                        Fernando Henrique da Silva
-                        (Indígena Pankarà)
-                    </h3>
-                    <article class="mb-3">
-                        Professor Indígena da Escola Estadual Indígena Sagrada Família
+                        Pernambuco (UFAPE).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/WhatsApp Image 2023-11-09 at 12.42.17.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fernando Henrique da Silva</h5>
+                            <p class="card-text">Professor Indígena da Escola Estadual Indígena Sagrada Família
                         Coordenador , JUVENTUDE INDÍGENA PANKARÁ (JUIPAN)
                         Conselheiro local de saúde indígena pankará (cispan )
                         Formação: Tec. Em farmácia. Graduado em Licenciatura em Química, IFSertãoPE Campus
                         Floresta.
                         Cursando especialização em Metodologia do ensino de biologia e química.
-                        Pelo Instituição IPERMING.
-
-                    </article>
-                </div><!--fim media-->
-
-                <div class="container-fluid collum text-center rounded"><!--início linha-->
-                    <!-- início media-->
-                    <img src="./img/guii.jpeg" class=" img-fluid img-thumbnail mx-auto d-block img-contato">
-                    <h3 class="h5">
-                        João Guilherme Barbosa da Silva
-                    </h3>
-                    <article class="mb-3">
-                        Sou da etnia Baré, nasci em São Gabriel da Cachoeira, vim para Manaus
+                        Pelo Instituição IPERMING.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/guii.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">João Guilherme Barbosa da Silva</h5>
+                            <p class="card-text">Sou da etnia Baré, nasci em São Gabriel da Cachoeira, vim para Manaus
                         com minha familia ainda muito jovem em busca de melhores oportunidades e um melhor
                         futuro.
                         Amante da tecnologia, quero usar isso para aumentar a visibilidade dos indigenas do
@@ -167,70 +155,65 @@ if (isset($_POST['submit'])) {
                         só
                         minha, como de todos ao meu redor e todos que fazem parte da minha herança indigenas
                         e
-                        não indigena.
-
-                    </article>
-
-                    <div class="container-fluid collum text-center rounded"><!--início linha-->
-                        <!-- início media-->
-                        <img src="./img/Vinny-Guara.jpg" class=" img-fluid img-thumbnail mx-auto d-block img-contato">
-                        <h3 class="h5">
-                            Marcus Vinicius Oliveira
-                        </h3>
-                        <article class="mb-3">
-                            Eu sou Marcus Vinicius Oliveira, um indígena cuja conexão com a própria etnia se perdeu ao longo do tempo, mas que possivelmente tem raízes na comunidade guarani da cidade do Rio de Janeiro. Minha jornada me levou a explorar não apenas minhas origens, mas também meu profundo interesse pela tecnologia e inovação.
-                            Desde jovem, fui fascinado pelo potencial transformador da tecnologia e suas aplicações práticas. Esta paixão me motivou a mergulhar no mundo digital, aprender sobre novas ferramentas e descobrir maneiras de utilizar a tecnologia para o bem da comunidade indígena e de todos aqueles que precisam de ajuda.
-
-                        </article>
-                    </div><!--fim media-->
-            </section>
-
+                        não indigena.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/Vinny-Guara.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Marcus Vinicius Oliveira</h5>
+                            <p class="card-text">Um indígena cuja conexão com a própria etnia se perdeu ao longo do tempo, mas que possivelmente tem raízes na comunidade guarani da cidade do Rio de Janeiro. Minha jornada me levou a explorar não apenas minhas origens, mas também meu profundo interesse pela tecnologia e inovação.
+                            Desde jovem, fui fascinado pelo potencial transformador da tecnologia e suas aplicações práticas. Esta paixão me motivou a mergulhar no mundo digital, aprender sobre novas ferramentas e descobrir maneiras de utilizar a tecnologia para o bem da comunidade indígena e de todos aqueles que precisam de ajuda.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Fim equipe-->
-        </section>
-
-        <div class="container">
-            <div class="row justify-content-center py-5">
-                <form class="col-sm-10 col-md-8 col-lg-6" id="contact-form" action="contato.php" method="POST">
-                    <h1 class="py-5">
-                        Sabendo disso, o que mais você quer saber sobre nós? mande sua mensagem:
-                    </h1>
-                    <h1 id="nao">Entre em Contato</h1>
-
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
-                        <label for="nome" class="form-label">Nome</label>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
-                        <label for="email" class="form-label">E-mail</label>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Assunto" required>
-                        <label for="assunto" class="form-label">Assunto</label>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <textarea class="form-control" id="mensagem" rows="5" placeholder="Mensagem" required style="height: 200px;" name="mensagem"></textarea>
-                        <label for="email">Mensagem</label>
-                    </div>
-
-                    <input type="submit" name="submit" id="submit">
 
 
-                    <p class="mt-3">
-                        Faremos nosso melhor para responder sua mensagem em até 2 dias úteis.
-                    </p>
+            <div class="container">
+                <div class="row justify-content-center py-5">
+                    <form class="col-sm-10 col-md-8 col-lg-6" id="contact-form" action="contato.php" method="POST">
+                        <h1 class="py-5">
+                            Sabendo disso, o que mais você quer saber sobre nós? mande sua mensagem:
+                        </h1>
+                        <h1 id="nao">Entre em Contato</h1>
 
-                    <p class="mt-3">
-                        Atenciosamente,<br>
-                        Equipe de desenvolvedores.
-                    </p>
-                </form>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
+                            <label for="nome" class="form-label">Nome</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
+                            <label for="email" class="form-label">E-mail</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Assunto" required>
+                            <label for="assunto" class="form-label">Assunto</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="mensagem" rows="5" placeholder="Mensagem" required style="height: 200px;" name="mensagem"></textarea>
+                            <label for="email">Mensagem</label>
+                        </div>
+
+                        <input type="submit" name="submit" id="submit">
+
+
+                        <p class="mt-3">
+                            Faremos nosso melhor para responder sua mensagem em até 2 dias úteis.
+                        </p>
+
+                        <p class="mt-3">
+                            Atenciosamente,<br>
+                            Equipe de desenvolvedores.
+                        </p>
+                    </form>
+                </div>
             </div>
-        </div>
     </main>
 
     <footer class="border-top text-muted bg-light">
